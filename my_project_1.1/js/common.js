@@ -9,7 +9,6 @@ $(document).ready(function() {
 		items: 4,
 		loop:true,
 		navText: "",
-		 responsiveClass:true,
 		responsive:{
 				0:{
 						items:1,
@@ -28,7 +27,6 @@ $(document).ready(function() {
 						
 					}
 				},
-			
 	});
 
 	$(".slids").owlCarousel({
