@@ -1,0 +1,118 @@
+.head_mnu 
+	top: 0
+	padding: 28px 30px
+	position: fixed
+	z-index: 999
+	width: 100%
+	background-color: #fff
+	border-bottom: 1px solid transparent
+
+.mnu
+	top: 0
+	margin-top: 2px
+	position: relative
+	line-height: 1
+	display: flex
+	justify-content: space-between
+	
+	border-bottom: 1px solid transparent
+.logo
+	margin-top: 7px
+
+	a, a:hover, a:active, a:focus
+		border: none
+		font-size: 2rem
+		font-weight: 700
+		text-transform: uppercase
+		color: #232525
+
+.main_mnu 
+	position: relative
+	font-size: 1.2rem
+	font-weight: 600
+	text-transform: uppercase
+	
+		
+	ul
+		margin: 0
+	li
+		display: inline-block
+		&:hover
+			transition: all 20s ease
+			ul
+				display: block
+		a
+			display: block
+			letter-spacing: 0.5px
+			font-size: 1.2rem
+			font-weight: 600
+			padding: 10px
+			border: none
+			
+			button
+				display: none
+
+	.journal_mnu, .shop_mnu, .item_mnu
+		transition: all .2s ease-in-out
+		padding: 0
+		display: none
+		position: absolute
+		background-color: #fff
+		width: 180px
+		a
+			padding: 15px
+			display: block
+			position: relative
+			text-align: left
+			width: 180px
+			border: 1px solid #eee
+	.sab_icon
+		
+		&:after
+			content: "\f107"
+			font-family: "lock"
+			display: none
+			font-size: 1.4rem
+
+.journal_mnu
+	li
+		&:hover
+			ul
+				li
+					display: block
+	.item_mnu
+		top: 0
+		right: -180px
+		li
+			display: none
+
+
+
+.toggleMenu
+	height: 48px
+	line-height: 20px
+	padding: 10px 30px
+	position: relative
+	z-index: 1000
+	width: 100%
+	margin-top: 10px
+	display: none
+	letter-spacing: 0.5px
+	cursor: pointer
+	text-transform: uppercase
+	font-size: 1.4rem
+	font-weight: 500
+	span
+		font-size: 2rem
+		vertical-align: middle
+	&.on
+		+ #menu
+			opacity: 1
+			visibility: visible
+
+.mnu [type="checkbox"]
+  display: none
+
+.scroll
+	padding: 18px 30px
+	border-color: #eee
