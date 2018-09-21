@@ -1,0 +1,121 @@
+.photos 
+	display: block
+	height: auto
+
+.shows_me
+	display: flex
+	flex-wrap: wrap
+	juctify-content: center
+
+//setting menu
+.show_me
+	display: flex
+	align-items: center
+	margin: 30px 0
+	width: 1200px
+	height: 60px
+	background-color: #fff
+	border-radius: 40px
+	box-shadow: 0 0 10px transparentize(#000, 0.9)
+	h5
+		margin: 0 28px 0 33px
+
+.show_bg
+	text-transform: uppercase
+	text-decoration: none
+	padding: 5px 20px
+	margin: 0 20px
+	color: $text
+	font-size: 16px
+	&:hover, &:active, &:focus
+		background-color: #5fc0e7
+		color: #fff
+		border-radius: 50px
+
+//setting gallery
+
+.gallerys
+	max-width: 1200px
+	width: 100%
+	box-shadow: 0 0 15px transparentize(#000, 0.9)
+	background-color: #fff
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: 60px
+	padding: 15px 0
+
+
+.gallery
+	margin: 11px
+	height: 170px
+	width: 273px
+	box-shadow: 0 0 10px transparentize(#000, 0.9)
+	.photo
+		min-width: 273px
+		width: 100%
+		height: 100%
+.m_left
+	margin-left: 20px
+
+.icon_search
+	display: flex
+	Justify-content: center
+	opacity: 0
+	position: absolute
+	height: 170px
+	width: 273px
+	background-color: transparentize($text, 0.2)
+	margin-top: -178px
+	cursor: pointer
+	&:hover 
+		opacity: 100
+	&:after
+		content: '\E802'
+		font-family: "cog"
+		font-size: 40px
+		color: #fff
+		position: absolute
+		overflow: hidden
+		top: 50px
+
+.modal
+	display: none
+	position: fixed
+	align-items: center
+	justify-content: center
+	z-index: 1
+	left: 0
+	top: 0
+	height: 100%
+	width: 100%
+	overflow: auto
+	background-color: transparentize($text, 0.2)
+
+.modol_content
+	background-color: #fff
+	border-radius: 15px
+	width: 1200px
+	height: 525px
+
+.modal_bg
+	min-width: 1250px
+	width: 100%
+	height: 525px
+
+.close
+	position: absolute
+	color: #5fc0e7
+	font-size: 40px
+	left: 1285px
+	top: 48px
+	height: 20px
+	width: 25px
+	border-radius: 50px
+
+	background-color: #fff
+
+.icon-cancel-circled
+	&:before
+		position: absolute
+		top: -10px
+		left: -15px
