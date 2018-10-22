@@ -1,0 +1,114 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@media only screen and (max-width: 1200px)
+ /**/
+ 
+// ≥992px
+@media only screen and (max-width: 992px)
+ /**/
+
+// ≥980px
+@media only screen and (max-width: 980px)
+ //header
+	header
+		.bg	
+			background-color: transparentize($bgc, 0.77)
+			height: 30px
+			position: absolute
+			width: 100%
+			z-index: 0
+		.header
+			position: relative
+			z-index: 3
+			justify-content: space-between
+			background-color: transparentize(#000, 0.21)
+			height: 30px
+			img
+				height: 21px
+				padding-left: 20px
+			//setting MENU
+			label.toggleMenu
+				color: $accent
+				padding: 15px
+				cursor: pointer
+				position: relative
+				display: block
+				.icon-menu
+					font-size: 20px
+			input.toggleMenu:checked ~ ul
+				display: block
+			.menu
+				position: absolute
+				align-self: start
+				display: none
+				padding: 0
+				top: 14px
+				max-width: 976px
+				width: 100%
+				background-color: transparentize(#000, 0.21)
+				z-index: 2
+				.min
+					display: block
+				.max
+					display: none
+				li
+					margin: 0 20px
+					border-bottom: $bgc 1px solid 
+					text-align: left
+					height: 30px
+				a
+					position: relative
+					border-left: none
+					right: 14px
+					font-family: "Medium"
+					font-size: 12px
+					color: #236cbd
+				.link
+					color: #fff
+		.sects
+			
+			.sect
+				padding: 50px 0 60px
+				margin: 0 20px
+				article
+					max-width: 300px
+					position: relative
+					padding: 0 12px 0 22px
+					h1
+						font-size: 24px
+					p
+						font-size: 16px
+			.arrow, .img_pulse
+				display: none
+
+
+// ≥768px
+@media only screen and (max-width: 768px)
+ /**/
+// ≥576px
+@media only screen and (max-width: 576px)
+ /**/
+
+
+/*==========  Mobile First  ==========*/
+
+
+// ≤576px
+@media only screen and (min-width: 576)
+ /**/
+
+// ≤768px
+@media only screen and (min-width: 768px)
+ /**/
+
+// ≤992px
+@media only screen and (min-width: 992px)
+ /**/
+
+// ≥1200
+@media only screen and (max-width: 1200px)
+ /**/

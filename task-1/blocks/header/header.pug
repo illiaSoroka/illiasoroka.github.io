@@ -1,0 +1,37 @@
+mixin header()
+	header(style="background-image: url(img/header/bgi.png)")
+		aside.header
+			img(src="img/header/logo.png", alt="logo")
+			input(type="checkbox" name="toggle" id="menu" class="toggleMenu")
+			<label for="menu" class="toggleMenu"><i class="icon-menu"></i></label>
+			ul.menu
+				li
+					a(href="#" class="link") home 
+				li
+					a(href="#") about
+				li
+					a(href="#") Solution 
+				li
+					a(href="#") Demo 
+				li(class="max")
+					a(href="#") News and Blog
+				li(class="min")
+					a(href="#") News
+				li(class="min")
+					a(href="#") and Blog
+				li
+					a(href="#") Support
+				li
+					a(href="#") contact us
+		.sects
+			.sect
+				section
+					h1 Lorem Ipsum 
+					p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				.img_pulse
+					img(src="img/header/pulse.png", alt="pulse")
+			.arrow
+				img(src="img/header/arrow.png", alt="arrow")
+
+
+

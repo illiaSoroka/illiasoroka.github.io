@@ -1,0 +1,70 @@
+header 
+	display: block
+	
+	background-size: cover
+	width: 100%
+	.header
+		height: 90px
+		background-color: transparentize(#002447, 0.21)
+		display: flex
+		justify-content: center
+		align-items: center
+		.toggleMenu
+			display: none
+		[type="checkbox"]
+			display: none
+
+		ul
+			display: flex
+			align-items: center
+			justify-content: center
+			max-width: 720px
+			.min
+				display: none
+			li
+				list-style-type: none
+			a
+				text-decoration: none
+				text-transform: uppercase
+				color: #1562aa
+				
+				padding: 0 14px
+				border-left: 2px #1562aa solid
+				&:hover
+					color: #fff
+			.link
+				color: #fff
+				border-left: none
+.sects
+	background-color: transparentize($bgc, 0.77)
+	.sect
+		height: auto
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		padding: 455px 0 0
+		position: relative
+		section
+			max-width: 868px
+			height: auto
+			background-color: transparentize($bgc, 0.25)
+			padding: 0 33px 0 41px
+			position: absolute
+			h1
+				line-height: 1.2
+			p
+				font-size: 52px
+				color: #fff
+				line-height: 1.2
+				padding-bottom: 20px
+		.img_pulse
+			position: relative
+			top: 62px
+			right: 235px
+	.arrow
+		display: flex
+		justify-content: center
+		position: relative
+		bottom: 26px
+
+		

@@ -1,0 +1,159 @@
+.buttons
+	width: 100%
+	position: relative
+	display: flex
+	justify-content: center
+
+	input[type="checkbox"]
+		display: none
+
+	.button
+		position: relative
+		box-sizing: content-box
+		margin:  55px 39px 32px
+		height: 80px
+		width: 420px
+		padding: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		
+	.button_1
+		color: $accent
+		border: 1px #3b3b3b solid
+
+		&:active, &:focus
+			border: none
+	.button_1, .button_2
+		background-color: transparent
+	.button_2, .button_3
+		border: none
+	.button_3
+		background-color: transparentize(#66b2ff, .23) 
+		color: $accent
+	.button_1, .button_3
+		.off
+			display: none
+
+	input.check_1:checked ~ .button_1
+		background-color: $accent
+		color: #fff
+		border: none
+		.on
+			display: none
+		.off
+			display: block
+	input.check_3:checked ~ .button_3
+		background-color: $accent
+		color: #fff
+		border: none
+		.on
+			display: none
+		.off
+			display: block
+	input.check_2:checked ~ .button_2
+		background-color: $accent
+
+input.check_1:checked ~ .form_popup
+	display: flex
+input.check_2:checked ~ .form_popup
+	display: flex
+input.check_3:checked ~ .form_popup
+	display: flex
+
+//setting_form start
+input
+	font-size: 24px
+	text-transform: uppercase
+	box-sizing: border-box
+	padding-left: 17px
+	font-family: "medium"
+	clip: true
+.form_popup
+	display: none
+	position: absolute
+	z-index: 1
+	justify-content: flex-start
+	top: 287px
+	width: 1415px
+	height: 525px
+	background-color: transparentize(#fff, 0.03)
+	border: 2px #dadada solid
+
+	#check
+		display: none
+	.check
+		box-sizing: border-box
+		position: relative
+		color: #373737
+		padding-right: 70px
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		margin-bottom: 45px
+		font-family: "medium"
+		font-size: 24px
+		text-transform: uppercase
+		span
+			height: 58px
+			width: 58px
+			border: 1px #000 solid
+			display: inline-block
+			position: absolute
+			right: 0px
+			
+		[type=checkbox]:checked + span:after
+			content: '\e800'
+			font-family: 'cog'
+			font-size: 50px
+			position: relative
+			bottom: 10px
+			left: 5px
+			color: $accent
+
+	.field, .check
+		width: 610px
+		height: 60px
+		margin: 30px 0
+	.form
+		margin: 60px 40px 0
+	.form_left
+		width: 610px
+		margin-left: 70px
+
+	.form_close
+		position: relative
+		.close
+			position: absolute
+			height: 60px
+			width: 60px
+			font-size: 40px
+			color: #444
+			bottom: 0px
+			right: -25px
+		[type=checkbox]:checked + .form_popup
+			display: none
+			
+.button_form
+	position: absolute
+	background-color: $accent
+	border: none
+	width: 210px
+	height: 50px
+.button_sect3
+	right: 40px
+	margin-top: 15px
+//setting_form end
+
+.background-image
+	max-width: 1870px
+	width: 100%
+	position: relative
+	.bg_image
+		width: 100%
+		height: 800px
+		background-repeat: no-repeat
+		background-size: contain
+		margin-bottom: 20px
+		position: relative
+
