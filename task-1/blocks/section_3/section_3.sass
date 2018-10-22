@@ -68,7 +68,7 @@ input
 	box-sizing: border-box
 	padding-left: 17px
 	font-family: "medium"
-	clip: true
+	
 .form_popup
 	display: none
 	position: absolute
@@ -82,34 +82,7 @@ input
 
 	#check
 		display: none
-	.check
-		box-sizing: border-box
-		position: relative
-		color: #373737
-		padding-right: 70px
-		display: flex
-		justify-content: flex-end
-		align-items: center
-		margin-bottom: 45px
-		font-family: "medium"
-		font-size: 24px
-		text-transform: uppercase
-		span
-			height: 58px
-			width: 58px
-			border: 1px #000 solid
-			display: inline-block
-			position: absolute
-			right: 0px
-			
-		[type=checkbox]:checked + span:after
-			content: '\e800'
-			font-family: 'cog'
-			font-size: 50px
-			position: relative
-			bottom: 10px
-			left: 5px
-			color: $accent
+
 
 	.field, .check
 		width: 610px
@@ -133,6 +106,35 @@ input
 			right: -25px
 		[type=checkbox]:checked + .form_popup
 			display: none
+			
+.check
+	box-sizing: border-box
+	position: relative
+	color: #373737
+	padding-right: 70px
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	margin-bottom: 45px
+	font-family: "medium"
+	font-size: 24px
+	text-transform: uppercase
+	span
+		height: 58px
+		width: 58px
+		border: 1px #000 solid
+		display: inline-block
+		position: absolute
+		right: 0px
+		
+	[type=checkbox]:checked + span:after
+		content: '\e800'
+		font-family: 'cog'
+		font-size: 50px
+		position: relative
+		bottom: 10px
+		left: 5px
+		color: $accent
 			
 .button_form
 	position: absolute

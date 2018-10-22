@@ -16,14 +16,60 @@
 		.margin_p
 			margin: 25px 0 
 	.sect_6
+		margin-top: 65px
+		position: relative
 		display: flex
-		justify-content: space-around
+		
 		.forms_footer
+			position: relative
 			display: flex
 			flex-direction: column
+			padding-right: 225px
+			margin-left: 70px
+
+			//setting form
 			#form_f2
 				margin-top: 48px
 			.form_footer
+				background-color: transparent
 				height: 50px
 				width: 450px
 				margin: 17px 0
+
+
+			//setting_check
+			#check_footer
+				display: none
+			@extend .check
+			.check_footer
+				margin-top: 17px
+				box-sizing: border-box
+				position: relative
+				width: 450px
+				padding-left: 20px
+				.span_check
+					height: 37px
+					width: 37px
+					background-color: transparentize(#fff, 0.35)
+				[type=checkbox]:checked + .span_check:after
+					font-size: 35px
+					left: 2px
+
+			//setting button
+			.button_sect6
+				margin-top: 35px
+				position: relative
+				left: 120px
+				&:active, &:hover
+					background-color: transparent
+					border: 1px #b9b5b4 solid
+					h5
+						color: #5e9bf6
+		
+		.map
+			position: relative
+			h3
+				position: absolute
+				right: 185px
+				top: 100px
+
