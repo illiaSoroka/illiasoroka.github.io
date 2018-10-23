@@ -2,7 +2,7 @@
 	background-color: #f6f8fb
 	.column
 		height: 210px
-	.grid_wrap
+	.grid_wrap_max
 		transform: rotate(225deg)
 		position: relative
 		top: -100px
@@ -89,6 +89,45 @@ hr
 	right: -90px
 	left: 150px
 
+//min_grid wrap
+.grid_wrap_min
+	display: none
+	flex-direction: column
+	width: 100%
+	justify-content: center
+	align-items: center
+	//transform: rotate(225deg)
+	.grid_w_min
+		max-width: 320px
+		width: 100%
+		display: flex
+		justify-content: space-between
+		margin: 35px 0
+		.grids
+			margin: 0 25px
+			transform: rotate(225deg)
+			height: 102px
+			width: 102px
+			background-color: #e2e4e7
+			justify-content: center
+			align-items: center
+			display: flex
+			.grid
+				transform: rotate(-225deg)
+				.img_grid
+					position: relative
+					left: 25px
+				p
+					padding: 0 5px 0 8px
+					line-height: 1
+					position: relative
+					font-size: 22px
+					left: 2px
+					width: 85px
+					font-family: "medium"
+					top: 15px
+					text-transform: uppercase
+					background-color: #f6f8fb
 
 
 
