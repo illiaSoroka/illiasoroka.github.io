@@ -4,6 +4,9 @@ header
 	background-size: cover
 	width: 100%
 	.header
+		position: fixed
+		width: 100%
+		z-index: 15
 		height: 90px
 		background-color: transparentize(#002447, 0.21)
 		display: flex
@@ -21,8 +24,7 @@ header
 			max-width: 720px
 			.min
 				display: none
-			li
-				list-style-type: none
+			
 			a
 				text-decoration: none
 				text-transform: uppercase
@@ -42,7 +44,7 @@ header
 		display: flex
 		justify-content: center
 		flex-wrap: wrap
-		padding: 455px 0 0
+		padding: 545px 0 0
 		position: relative
 		section
 			max-width: 868px

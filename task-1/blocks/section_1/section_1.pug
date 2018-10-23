@@ -6,20 +6,21 @@ mixin section_1()
 
 		section.column
 			h4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-			h4.brt Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+			h4.brt.text_max Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+			h4.brt.text_min Lorem Ipsum is simply dummy text of the printing and typesetting indus- try. Lorem Ipsum has been the indus- try's standard dummy 
 
 		aside.blocks 
 			.block.block1
 				.img_block.img_1
 					img(src="img/section_1/1.png", alt="")
-				p Lorem Ipsum is simply dummy text of the printing and typeset - ting industry.
-			.block.block2
-				p Lorem Ipsum is simply dummy text of the printing and typeset - ting industry.
+				p Lorem Ipsum is simply dummy text<span class="text_on"> of the printing and typeset - ting industry.</span>
+			.block#block2
+				p Lorem Ipsum is simply dummy text<span class="text_on"> of the printing and typeset - ting industry.</span>
 				.img_block.img_2
 					img(src="img/section_1/2.png", alt="")
 			.block.block3
 				.img_block.img_3
 					img(src="img/section_1/3.png", alt="")
-				p Lorem Ipsum is simply dummy text of the printing and typeset - ting industry.
+				p Lorem Ipsum is simply dummy text<span class="text_on"> of the printing and typeset - ting industry.</span>
 
 

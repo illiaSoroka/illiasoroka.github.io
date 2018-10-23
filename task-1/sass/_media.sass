@@ -3,17 +3,51 @@
 
 /*==========  Desktop First  ==========*/
 
+// ≥1440px
+@media only screen and (max-width: 1492px)
+	//setting_section_3
+	.section_3
+		.buttons
+			.button_2
+				h3
+					font-size: 30px
+		//setting_form end
+		.background-image
+			right: 110px
+
+// ≥1300px
+@media only screen and (max-width: 1300px)
+	//setting_section_3
+	.section_3
+		.buttons
+			.button_2
+				h3
+					font-size: 26px
+			.button
+				h4
+					font-size: 24px
+
 // ≥1200px
 @media only screen and (max-width: 1200px)
- /**/
+	//setting_section_3
+	.section_3
+		.buttons
+			.button_2
+				h3
+					font-size: 20px
+			.button
+				h4
+					font-size: 18px
  
 // ≥992px
 @media only screen and (max-width: 992px)
- /**/
+	/**/
+	.section_3, .section_4, .section_5
+		display: none
 
 // ≥980px
 @media only screen and (max-width: 980px)
- //header
+	//header
 	header
 		.bg	
 			background-color: transparentize($bgc, 0.77)
@@ -22,7 +56,7 @@
 			width: 100%
 			z-index: 0
 		.header
-			position: relative
+			position: fixed
 			z-index: 3
 			justify-content: space-between
 			background-color: transparentize(#000, 0.21)
@@ -74,7 +108,7 @@
 			.sect
 				padding: 50px 0 60px
 				margin: 0 20px
-				article
+				section
 					max-width: 300px
 					position: relative
 					padding: 0 12px 0 22px
@@ -84,14 +118,77 @@
 						font-size: 16px
 			.arrow, .img_pulse
 				display: none
+// ≥970px
+@media only screen and (max-width: 970px)
+	//head_setting_section_1
+	.section
+		.head
+			h2
+				font-size: 36px
+		.column
+			max-width: 300px
+			height: 175px
+			h4
+				font-size: 14px
+				margin: 0 5px
+			.text_max
+				display: none
+			.text_min
+				display: block
+			.brt
+				padding-top: 15px
+		.blocks 
+
+			#block2
+				display: flex
+				flex-direction: column-reverse
+
+			.block
+				flex-direction: column
+				p
+					font-family: "medium"
+					font-size: 18px
+					.text_on
+						display: none
+				
+
+			.block1, #block2
+				p
+					left: 0
+
+	.section_2
+		.column
+			height: 115px
 
 
 // ≥768px
 @media only screen and (max-width: 768px)
- /**/
+	/**/
 // ≥576px
 @media only screen and (max-width: 576px)
- /**/
+	/**/
+	.section
+		.blocks 
+			.block
+				padding: 20px 0
+				margin: 0
+				text-align: center
+				p
+					max-width: 220px
+				.img_1
+					height: 85px
+					max-width: 220px
+				.img_2
+					height: 120px
+					max-width: 160px
+				.img_3
+					height: 120px
+					max-width: 175px
+				.img_block
+					img
+						width: 100%
+			#block2
+				height: 200px
 
 
 /*==========  Mobile First  ==========*/
@@ -99,16 +196,16 @@
 
 // ≤576px
 @media only screen and (min-width: 576)
- /**/
+	/**/
 
 // ≤768px
 @media only screen and (min-width: 768px)
- /**/
+	/**/
 
 // ≤992px
-@media only screen and (min-width: 992px)
- /**/
+@media only screen and (min-width: 992px)	
+	/**/
 
 // ≥1200
 @media only screen and (max-width: 1200px)
- /**/
+	/**/
