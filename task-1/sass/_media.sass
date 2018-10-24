@@ -42,8 +42,63 @@
 // ≥992px
 @media only screen and (max-width: 992px)
 	/**/
+	.section
+		.head
+			h2
+				font-size: 36px
 	.section_3, .section_4, .section_5
 		display: none
+	//setting section_6
+	.section_6
+		h4, h3
+			font-size: 24px
+		.big_br
+			display: none
+		.sect_part_1 
+			.margin_p
+				padding: 0 20px
+				.text_off
+					display: none
+			
+			.min_br
+				display: inline
+			p
+				font-size: 18px
+				font-family: "medium"
+		.sect_6
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			margin-top: 15px
+			.map
+				max-width: 400px
+				img
+					width: 100%
+				h3
+					position: absolute
+					top: 50px
+					right: 177px
+			.forms_footer
+				padding-right: 0
+				margin: 0 31px 0 34px
+				.form_footer
+					width: 274px
+					height: 47px
+				#form_f2
+					margin-top: 17px
+				.button_sect6
+					left: 0
+		.social_icons
+			ul
+				margin-top: 42px
+
+	footer
+		text-align: center
+		height: 50px
+		p
+			font-size: 12px
+			padding: 0 14px
+
 
 // ≥980px
 @media only screen and (max-width: 980px)
@@ -56,7 +111,6 @@
 			width: 100%
 			z-index: 0
 		.header
-			top: 0
 			position: fixed
 			z-index: 3
 			justify-content: space-between
@@ -123,9 +177,6 @@
 @media only screen and (max-width: 970px)
 	//head_setting_section_1
 	.section
-		.head
-			h2
-				font-size: 36px
 		.column
 			max-width: 300px
 			height: 175px
@@ -197,6 +248,14 @@
 						width: 100%
 			#block2
 				height: 200px
+
+	.section_6
+		.sect_6
+			.map
+				max-width: 260px
+				h3
+					top: 30px
+					right: 88px
 
 
 /*==========  Mobile First  ==========*/
