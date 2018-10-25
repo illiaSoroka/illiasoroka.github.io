@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'cog';
-  src: url('../font/cog.eot?5899500');
-  src: url('../font/cog.eot?5899500#iefix') format('embedded-opentype'),
-       url('../font/cog.woff2?5899500') format('woff2'),
-       url('../font/cog.woff?5899500') format('woff'),
-       url('../font/cog.ttf?5899500') format('truetype'),
-       url('../font/cog.svg?5899500#cog') format('svg');
+  src: url('../font/cog.eot?9329837');
+  src: url('../font/cog.eot?9329837#iefix') format('embedded-opentype'),
+       url('../font/cog.woff2?9329837') format('woff2'),
+       url('../font/cog.woff?9329837') format('woff'),
+       url('../font/cog.ttf?9329837') format('truetype'),
+       url('../font/cog.svg?9329837#cog') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'cog';
-    src: url('../font/cog.svg?5899500#cog') format('svg');
+    src: url('../font/cog.svg?9329837#cog') format('svg');
   }
 }
 */
@@ -63,3 +63,4 @@
 .icon-facebook:before { content: '\e805'; } /* '' */
 .icon-twitter:before { content: '\e806'; } /* '' */
 .icon-xing:before { content: '\e807'; } /* '' */
+.icon-ok-1:before { content: '\e808'; } /* '' */

@@ -27,6 +27,8 @@
 				h4
 					font-size: 24px
 
+
+
 // ≥1200px
 @media only screen and (max-width: 1200px)
 	//setting_section_3
@@ -38,6 +40,15 @@
 			.button
 				h4
 					font-size: 18px
+
+	.section_6
+		.sect_6
+			flex-direction: column
+			.map
+				right: 0
+			.forms_footer
+				margin: 0!important
+				right: 0
  
 // ≥992px
 @media only screen and (max-width: 992px)
@@ -79,13 +90,34 @@
 					top: 50px
 					right: 177px
 			.forms_footer
-				padding-right: 0
+				padding: 0
 				margin: 0 31px 0 34px
 				.form_footer
 					width: 274px
 					height: 47px
 				#form_f2
 					margin-top: 17px
+				.check_footer
+					text-align: center
+					margin-top: 15px
+					width: 300px
+					p
+						margin: 0
+						font-size: 30px
+						font-family: "medium"
+					.span_check
+						position: relative
+						height: 58px
+						width: 58px
+						margin: 15px 0 10px
+					[type=checkbox]:checked + .span_check:after
+						content: "\E808"
+						font-size: 40px
+						top: -5px
+
+						
+
+						
 				.button_sect6
 					left: 0
 		.social_icons
@@ -111,7 +143,6 @@
 			width: 100%
 			z-index: 0
 		.header
-			position: fixed
 			z-index: 3
 			justify-content: space-between
 			background-color: transparentize(#000, 0.21)
@@ -173,6 +204,7 @@
 						font-size: 16px
 			.arrow, .img_pulse
 				display: none
+
 // ≥970px
 @media only screen and (max-width: 970px)
 	//head_setting_section_1
@@ -218,6 +250,8 @@
 		.column
 			height: 115px
 			margin-bottom: 15px
+		.bottom_arrow
+			display: block
 	
 
 // ≥768px
@@ -226,6 +260,7 @@
 // ≥576px
 @media only screen and (max-width: 576px)
 	/**/
+
 	.section
 		.blocks 
 			.block
@@ -256,6 +291,10 @@
 				h3
 					top: 30px
 					right: 88px
+
+// ≥340px
+@media only screen and (max-width: 340px)
+	/**/
 
 
 /*==========  Mobile First  ==========*/
