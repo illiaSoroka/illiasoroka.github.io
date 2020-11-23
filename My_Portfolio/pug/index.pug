@@ -1,0 +1,45 @@
+extends main.pug
+
+include ../blocks/sidebar/sidebar.pug
+
+include ../blocks/header/header.pug
+
+include ../blocks/about_me/about_me.pug
+
+include ../blocks/work-experience/work_experience.pug
+
+include ../blocks/education/education.pug
+
+include ../blocks/my_skills/my_skills.pug
+
+include ../blocks/contacts/contacts.pug
+
+include ../blocks/footer/footer.pug
+
+
+
+block title
+	title projeccz
+
+block pagecontent
+	.wrapper
+		
+		+sidebar()
+
+		section.wrap
+		
+			+header()
+
+			main.main
+
+				+about_me()
+
+				+work_experience()
+
+				+education()
+
+				+my_skills()
+
+				+contacts()
+
+				+footer()

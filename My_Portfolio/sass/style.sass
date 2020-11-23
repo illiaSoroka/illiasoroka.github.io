@@ -1,0 +1,120 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+@import "../blocks/header/header.sass"
+@import "../blocks/sidebar/sidebar.sass"
+@import "../blocks/about_me/about_me.sass"
+@import "../blocks/work-experience/work_experience.sass"
+@import "../blocks/education/education.sass"
+@import "../blocks/my_skills/my_skills.sass"
+@import "../blocks/contacts/contacts.sass"
+@import "../blocks/footer/footer.sass"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	max-width: 95%
+	margin: 0 auto
+	font-size: 14px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.wrapper
+	max-width: 100%
+	display: flex
+
+.wrap
+	width: 85%
+
+.container
+	display: flex
+	margin: 0 auto
+	flex-direction: column
+	text-align: center
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.button
+	width: 170px
+	height: 49px
+	background-color: $accent
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 0 auto
+	border-radius: 2px
+
+.text-center
+	text-align: center
+
+ul
+	list-style-type: none
+	padding: 0
+
+.border
+	padding: 80px 10%
+	border-bottom: 1px solid rgba(0, 0, 0, .1)
+
+// Decoration H2
+
+.title
+	text-transform: capitalize
+	text-align: left
+.title_color
+	color: #000
+
+.title::after
+	content: " "
+	height: 2px
+	width: 76px
+	display: flex
+	background-color: $accent
+	margin-bottom: 32px
+
+/**********customize text****************/
+
+h1, h2, h3, h4
+	font-family: $font-bold
+
+h1
+	font-size: 3.429em
+
+h2
+	font-size: 2.286em
+
+h3
+	font-size: 1.286em
+
+a
+	text-decoration: none
+	font-size: 1.571em
+	color: $text
+
+b, strong
+	font-weight: bold
+
+@import "media" // Always at the end
