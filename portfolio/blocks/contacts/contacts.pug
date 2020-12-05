@@ -4,7 +4,16 @@ mixin contacts()
 			.my_contacts
 
 				section.message
-					h3 Leave a Message
+					form(action="index.html" method="post")
+						h3 Leave a Message
+						
+						input(type="text" id="name" name="user_name" placeholder="Name*" required
+)
+						input(type="email" id="email" name="user_email" placeholder="Email*" required
+)
+						textarea(id="bio" name="user_bio" placeholder="Message*" min="100" required
+)
+						button(type="submit" class="button" id="button") Hire Me!
 
 
 
@@ -12,9 +21,9 @@ mixin contacts()
 					.line_circle
 
 				section.contact_info
-					section.contact
+					section.contact#location
 						.icons
-							img(src="img/icon/Home.svg", alt="home")
+							img(src="img/icons/Home.svg", alt="home")
 						.text
 							h3 Location
 							address
@@ -22,7 +31,7 @@ mixin contacts()
 
 					section.contact
 						.icons
-							img(src="img/icon/Mail_2.svg", alt="home")
+							img(src="img/icons/Mail_2.svg", alt="home")
 						.text
 							h3 email
 							address
@@ -30,7 +39,7 @@ mixin contacts()
 						
 					section.contact
 						.icons
-							img(src="img/icon/Phone.svg", alt="home")
+							img(src="img/icons/Phone.svg", alt="home")
 						.text
 							h3 toll free call
 							address
