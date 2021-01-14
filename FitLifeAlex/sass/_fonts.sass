@@ -1,0 +1,11 @@
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2')
+
+@include font('regular', normal, 400, '../fonts/ArialRegular.woff2')
+@include font('bold', normal, 700, '../fonts/ArialBold.woff2')
+@include font('light', normal, 300, '../fonts/Dosis.woff2')

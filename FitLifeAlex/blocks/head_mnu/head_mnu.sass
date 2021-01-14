@@ -1,0 +1,30 @@
+#head_mnu
+	display: block
+	margin-bottom: 30px
+.nav
+	display: flex
+.ul
+	display: flex
+	list-style-type: none
+	padding: 0
+	align-items: flex-end
+
+.list
+	margin-right: 25px
+
+.link
+	text-decoration: none
+	display: block
+	color: #fff
+	text-transform: capitalize
+.link:focus, .link:hover
+	color: $accent
+.link::before
+	content: ''
+	display: inline-block
+
+	height: 11px
+	width: 11px
+	margin-right: 10px
+	border-radius: 50%
+	background-color: $accent
