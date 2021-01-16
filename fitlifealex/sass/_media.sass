@@ -58,6 +58,9 @@
 			color: $accent
 			font-size: 2em
 
+	.img-responsive:first-child
+		max-width: 60%
+
 // ≥889px
 @media only screen and (max-width: 889px)
 	.contact_info
@@ -68,16 +71,27 @@
 
 // ≥768px
 @media only screen and (max-width: 768px)
-	/**/
+	.img-responsive:first-child
+		max-width: 70%
+.img-responsive:nth-child(2n),
+.img-responsive:nth-child(3n)
+	max-width: 45%
 
 // ≥699px
 @media only screen and (max-width: 699px)
+	/*header menu*/
 	.nav
 		justify-content: flex-start
 		align-items: center
 		flex-direction: column
 	.title
 		padding: 0
+
+	/**Gallery setting**/
+
+	.img-responsive:first-child
+		max-width: 70%
+		height: auto
 
 	//contact
 	.message
@@ -87,6 +101,12 @@
 
 // ≥600px
 @media only screen and (max-width: 600px)
+
+	.img-responsive:first-child
+		max-width: 80%
+	.img-responsive:nth-child(2n),
+	.img-responsive:nth-child(3n)
+		max-width: 50%
 
 	.link::before
 		content: ''

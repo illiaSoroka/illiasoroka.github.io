@@ -18,19 +18,19 @@ block title
 
 block pagecontent
 
-	.wrapper
 
-		header.header
+
+	header.header
+	
+
+		+head_mnu()
+
+		+head()
+	
+	main.main
 		
+		+about_me()
 
-			+head_mnu()
-
-			+head()
-		
-		main.main
-			
-			+about_me()
-
-			+contact()
-		footer
-			+footer()
+		+contact()
+	footer
+		+footer()
